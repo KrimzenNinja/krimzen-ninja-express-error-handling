@@ -69,6 +69,7 @@
     "eslint-config-prettier": "^2.2.0",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-prettier": "^2.1.2",
+    "express": "^4.15.4",
     "jest-cli": "^20.0.0",
     "npm-watch": "^0.2.0",
     "nsp": "^2.6.3",
