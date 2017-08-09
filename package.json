@@ -1,0 +1,82 @@
+{
+  "name": "krimzen-ninja-express-error-handling",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=8.1.2"
+  },
+  "description": "Uses boom to handle errors in express",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib",
+    "prebuild": "npm run clean",
+    "build": "babel src -d lib --copy-files --source-maps",
+    "watch": "npm-watch",
+    "coverage": "npm test -- --coverage",
+    "codecov": "codecov",
+    "test": "jest",
+    "test-dependencies": "snyk test && nsp check",
+    "unit-test": "nyc mocha \"test/**/*.unit.js\"",
+    "prettier": "prettier --write --tab-width=4 --single-quote=true --print-width=120 \"{src,test}/**/*.js\"",
+    "lint": "eslint src test --fix",
+    "lint-ci": "eslint src test",
+    "docs": "documentation readme src --section=API --github --document-exported --readme-file=\"API.md\"",
+    "patch": "npm version patch && npm publish",
+    "minor": "npm version minor && npm publish",
+    "major": "npm version major && npm publish",
+    "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run docs && npm run build && git add . && git commit -m \"adding build artifacts\"",
+    "postpublish": "git push origin master --follow-tags && chandler push"
+  },
+  "watch": {
+    "test": "{src,test}/*.js",
+    "lint-ci": "{src,test}/*.js"
+  },
+  "jest": {
+    "testRegex": "/test/.*",
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrimZenNinja/krimzen-ninja-express-error-handling.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "es6",
+    "babel",
+    "jest",
+    "circleci",
+    "codecov",
+    "documentation",
+    "KrimZenNinja"
+  ],
+  "author": "Ryan Kotzen <potz666@gmail.com> (https://github.com/KrimZenNinja)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KrimZenNinja/krimzen-ninja-express-error-handling/issues"
+  },
+  "homepage": "https://github.com/KrimZenNinja/krimzen-ninja-express-error-handling#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.1.1",
+    "babel-jest": "^20.0.0",
+    "babel-preset-env": "^1.5.2",
+    "codecov": "^2.2.0",
+    "documentation": "4.0.0-rc.1",
+    "eslint": "^4.1.1",
+    "eslint-config-prettier": "^2.2.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "jest-cli": "^20.0.0",
+    "npm-watch": "^0.2.0",
+    "nsp": "^2.6.3",
+    "prettier": "^1.4.4",
+    "rimraf": "^2.6.1",
+    "snyk": "^1.36.2"
+  },
+  "dependencies": {
+    "debug": "^2.6.8"
+  }
+}
