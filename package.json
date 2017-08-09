@@ -77,6 +77,9 @@
     "snyk": "^1.36.2"
   },
   "dependencies": {
-    "debug": "^2.6.8"
+    "boom": "^5.2.0",
+    "debug": "^2.6.8",
+    "krimzen-ninja-common-errors": "^0.2.1",
+    "lodash": "^4.17.4"
   }
 }
