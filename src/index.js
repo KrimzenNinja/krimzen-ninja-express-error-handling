@@ -2,6 +2,7 @@ const debug = require('debug')('krimzen-ninja-express-error-handling');
 const boom = require('boom');
 const _ = require('lodash/lang');
 import { IsRequiredError } from 'krimzen-ninja-common-errors';
+const util = require('util');
 
 export default function initialise(options) {
     debug('Initialising');
@@ -44,9 +45,9 @@ function BoomErrorHandler(options) {
             req.log = console;
         }
         if (err.isServer) {
-            req.log.error('Server Error :', err);
+            req.log.error('Server Error :', util.inspect(err));
         } else {
-            req.log.warn('Client Error :', err);
+            req.log.warn('Client Error :', util.inspect(err));
         }
         if (options.exposeServerErrorMessages && err.isServer) {
             const messageToLog = err.output.payload;
