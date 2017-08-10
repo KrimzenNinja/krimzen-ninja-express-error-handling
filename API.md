@@ -6,7 +6,7 @@
 
 ### initialise
 
-[src/index.js:6-19](https://github.com/KrimzenNinja/krimzen-ninja-express-error-handling/blob/0975ad474c6a2bbc20bd9451ebf831c7a250b02c/src/index.js#L6-L19 "Source code on GitHub")
+[src/index.js:7-20](https://github.com/KrimzenNinja/krimzen-ninja-express-error-handling/blob/bd24a815d5e4406527f6d3015b2f8564ad4c51d0/src/index.js#L7-L20 "Source code on GitHub")
 
 **Parameters**
 
