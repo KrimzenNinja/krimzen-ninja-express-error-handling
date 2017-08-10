@@ -15,7 +15,6 @@ export default function initialise(options) {
     options.app.use(ErrorHandler());
     options.app.use(BoomErrorHandler(options));
     options.app.use(NotFound());
-    options.logger = options.logger || console;
     debug('Initialised');
 }
 
@@ -38,10 +37,16 @@ function ErrorHandler() {
 function BoomErrorHandler(options) {
     // eslint-disable-next-line no-unused-vars
     return function boomErrorHandler(err, req, res, next) {
+        if (!req.log) {
+            debug(
+                'req.log was falsy, falling back to conole. Make sure you are using express-pino-logger see https://github.com/pinojs/express-pino-logger'
+            );
+            req.log = console;
+        }
         if (err.isServer) {
-            options.logger.error('Server Error :', err);
+            req.log.error('Server Error :', err);
         } else {
-            options.logger.warn('Client Error :', err);
+            req.log.warn('Client Error :', err);
         }
         if (options.exposeServerErrorMessages && err.isServer) {
             const messageToLog = err.output.payload;
