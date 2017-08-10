@@ -1,6 +1,6 @@
 {
   "name": "krimzen-ninja-express-error-handling",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "engines": {
     "node": ">=8.1.2"
   },
