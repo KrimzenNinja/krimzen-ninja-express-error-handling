@@ -52,23 +52,23 @@
   },
   "homepage": "https://github.com/KrimZenNinja/krimzen-ninja-express-error-handling#readme",
   "devDependencies": {
-    "codecov": "^2.2.0",
-    "documentation": "4.0.0-rc.1",
-    "eslint": "^4.1.1",
-    "eslint-config-prettier": "^2.2.0",
-    "eslint-plugin-node": "^5.1.0",
-    "eslint-plugin-prettier": "^2.1.2",
-    "express": "^4.15.4",
-    "jest-cli": "^20.0.0",
-    "npm-watch": "^0.2.0",
-    "nsp": "^2.6.3",
-    "prettier": "^1.4.4",
-    "snyk": "^1.36.2"
+    "codecov": "^3.0.0",
+    "documentation": "^5.3.3",
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-prettier": "^2.3.1",
+    "express": "^4.16.2",
+    "jest-cli": "^21.2.1",
+    "npm-watch": "^0.3.0",
+    "nsp": "^2.8.1",
+    "prettier": "^1.7.4",
+    "snyk": "^1.47.0"
   },
   "dependencies": {
     "boom": "^5.2.0",
-    "debug": "^2.6.8",
-    "krimzen-ninja-common-errors": "^0.2.1",
+    "debug": "^3.1.0",
+    "krimzen-ninja-common-errors": "^0.3.0",
     "lodash": "^4.17.4"
   }
 }

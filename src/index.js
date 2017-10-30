@@ -15,8 +15,7 @@ module.exports = function initialise(options) {
     if (!options.app) {
         throw new IsRequiredError('options.app', initialise.name)
     }
-    options.exposeServerErrorMessages =
-        options.exposeServerErrorMessages || false
+    options.exposeServerErrorMessages = options.exposeServerErrorMessages || false
     options.app.use(ErrorHandler())
     options.app.use(BoomErrorHandler(options))
     options.app.use(NotFound())
@@ -59,23 +58,15 @@ function BoomErrorHandler(options) {
                 messageToLog.data = err.data
             }
             messageToLog.errMessage = err.message
-            res
-                .status(err.output.statusCode)
-                .set(err.output.headers)
-                .json(messageToLog)
+            res.status(err.output.statusCode).set(err.output.headers).json(messageToLog)
             return
         }
-        res
-            .status(err.output.statusCode)
-            .set(err.output.headers)
-            .json(err.output.payload)
+        res.status(err.output.statusCode).set(err.output.headers).json(err.output.payload)
     }
 }
 
 function NotFound() {
     return function notFound(req, res) {
-        res
-            .status(404)
-            .json({ message: 'Route not found : ' + req.originalUrl })
+        res.status(404).json({ message: 'Route not found : ' + req.originalUrl })
     }
 }
