@@ -4,6 +4,9 @@
 
 Unreleased features to be listed here
 
+## [0.1.0](https://github.com/KrimzenNinja/krimzen-ninja-module-template/compare/v0.1.0...v0.0.3) (2017-08-10)
+* Removing all of the babel traspilation code, now publishing with `module.exports` rather than `import`/`export` to allow older code bases to use it. This also simplifies the dev process. Also upgraded a few packages.
+
 ## [0.0.2](https://github.com/KrimZenNinja/krimzen-ninja-express-error-handling/compare/v0.0.1...v0.0.2) (2017-07-22)
 
 * Testing out if the publish step works.
