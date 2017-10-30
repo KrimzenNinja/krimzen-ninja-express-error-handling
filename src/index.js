@@ -58,10 +58,16 @@ function BoomErrorHandler(options) {
                 messageToLog.data = err.data
             }
             messageToLog.errMessage = err.message
-            res.status(err.output.statusCode).set(err.output.headers).json(messageToLog)
+            res
+                .status(err.output.statusCode)
+                .set(err.output.headers)
+                .json(messageToLog)
             return
         }
-        res.status(err.output.statusCode).set(err.output.headers).json(err.output.payload)
+        res
+            .status(err.output.statusCode)
+            .set(err.output.headers)
+            .json(err.output.payload)
     }
 }
 
