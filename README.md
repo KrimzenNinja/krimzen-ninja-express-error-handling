@@ -1,5 +1,7 @@
 # krimzen-ninja-express-error-handling
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/KrimzenNinja/krimzen-ninja-express-error-handling.svg)](https://greenkeeper.io/)
+
 ![NPM](https://nodei.co/npm/krimzen-ninja-express-error-handling.png)
 
 ![CircleCi](https://circleci.com/gh/KrimZenNinja/krimzen-ninja-express-error-handling.svg?style=shield)
