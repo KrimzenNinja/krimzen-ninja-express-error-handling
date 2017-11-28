@@ -6,9 +6,9 @@
   },
   "description": "Uses boom to handle errors in express",
   "files": [
-    "lib"
+    "src"
   ],
-  "main": "./lib/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "coverage": "npm test -- --coverage",
     "codecov": "codecov",
@@ -54,19 +54,19 @@
   "devDependencies": {
     "codecov": "^3.0.0",
     "documentation": "^5.3.3",
-    "eslint": "^4.10.0",
-    "eslint-config-prettier": "^2.6.0",
+    "eslint": "^4.12.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-prettier": "^2.3.1",
     "express": "^4.16.2",
     "jest-cli": "^21.2.1",
     "npm-watch": "^0.3.0",
-    "nsp": "^2.8.1",
-    "prettier": "^1.7.4",
-    "snyk": "^1.47.0"
+    "nsp": "^3.1.0",
+    "prettier": "^1.8.2",
+    "snyk": "^1.52.0"
   },
   "dependencies": {
-    "boom": "^5.2.0",
+    "boom": "^7.1.1",
     "debug": "^3.1.0",
     "krimzen-ninja-common-errors": "^0.3.0",
     "lodash": "^4.17.4"
