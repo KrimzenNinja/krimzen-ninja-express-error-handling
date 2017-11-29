@@ -1,6 +1,6 @@
 {
   "name": "krimzen-ninja-express-error-handling",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "engines": {
     "node": ">=8.1.2"
   },
@@ -24,7 +24,7 @@
     "major": "npm version major && npm publish",
     "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run docs",
     "postpublish": "git push origin master --follow-tags && chandler push",
-    "add-build-artifacts" :"git add . && git commit -m \"adding build artifacts\""
+    "add-build-artifacts": "git add . && git commit -m \"adding build artifacts\""
   },
   "watch": {
     "test": "{src,test}/*.js",
