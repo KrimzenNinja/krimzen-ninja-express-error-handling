@@ -22,8 +22,9 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run docs && git add . && git commit -m \"adding build artifacts\"",
-    "postpublish": "git push origin master --follow-tags && chandler push"
+    "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run docs",
+    "postpublish": "git push origin master --follow-tags && chandler push",
+    "add-build-artifacts" :"git add . && git commit -m \"adding build artifacts\""
   },
   "watch": {
     "test": "{src,test}/*.js",
