@@ -31,7 +31,11 @@
   },
   "jest": {
     "testRegex": "/test/.*",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test"
+    ]
   },
   "repository": {
     "type": "git",
