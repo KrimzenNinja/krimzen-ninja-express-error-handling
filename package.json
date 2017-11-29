@@ -22,7 +22,7 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
-    "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run docs && git add . && git commit -m \"adding build artifacts\"",
+    "preversion": "git add . && git commit -m \"adding build artifacts\"",
     "postpublish": "git push origin master --follow-tags && chandler push"
   },
   "watch": {
