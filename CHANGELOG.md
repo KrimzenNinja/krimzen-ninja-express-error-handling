@@ -11,6 +11,12 @@ Unreleased features to be listed here
 
 * Testing out if the publish step works.
 
+## [1.0.0](https://github.com/KrimZenNinja/krimzen-ninja-express-error-handling/compare/v0.0.1...v0.0.2) (2018-04-15)
+* Fixing some bugs caused by the upgrade to Boom where you can no longer call `wrap` or `create.
+* Added unit tests to get to 100% coverage
+* Split out into separate files to aid testing
+
+
 ## 0.0.1 (2017-07-22)
 
 * initial release of empty project.
