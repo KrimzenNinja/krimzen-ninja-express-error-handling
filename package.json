@@ -65,6 +65,7 @@
     "eslint-plugin-prettier": "^2.3.1",
     "express": "^4.16.2",
     "jest-cli": "^21.2.1",
+    "node-mocks-http": "^1.5.8",
     "npm-watch": "^0.3.0",
     "nsp": "^3.1.0",
     "prettier": "^1.8.2",
