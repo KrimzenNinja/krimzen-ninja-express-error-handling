@@ -22,6 +22,7 @@
     "patch": "npm version patch && npm publish",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
+    "update": "npm-check -Eu",
     "preversion": "npm run prettier && npm run lint && npm t && npm run test-dependencies && npm run docs",
     "postpublish": "git push origin master --follow-tags && chandler push",
     "add-build-artifacts": "git add . && git commit -m \"adding build artifacts\""
@@ -66,6 +67,7 @@
     "express": "^4.16.2",
     "jest-cli": "^22.0.0",
     "node-mocks-http": "^1.5.8",
+    "npm-check": "^5.6.0",
     "npm-watch": "^0.3.0",
     "nsp": "^3.1.0",
     "prettier": "^1.8.2",
