@@ -59,7 +59,7 @@
   "homepage": "https://github.com/KrimZenNinja/krimzen-ninja-express-error-handling#readme",
   "devDependencies": {
     "codecov": "^3.0.0",
-    "documentation": "^6.0.0",
+    "documentation": "^9.1.0",
     "eslint": "^4.12.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-node": "^6.0.0",
