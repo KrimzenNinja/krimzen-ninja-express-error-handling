@@ -75,7 +75,7 @@
   },
   "dependencies": {
     "boom": "^7.1.1",
-    "debug": "^3.1.0",
+    "debug": "^4.1.1",
     "krimzen-ninja-common-errors": "^0.3.2",
     "lodash": "^4.17.4"
   }
