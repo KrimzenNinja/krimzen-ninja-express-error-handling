@@ -71,7 +71,7 @@
     "npm-watch": "^0.3.0",
     "nsp": "^3.1.0",
     "prettier": "^1.8.2",
-    "snyk": "^1.52.0"
+    "snyk": "^1.121.1"
   },
   "dependencies": {
     "boom": "^7.1.1",
